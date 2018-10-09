@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/save"
+        android:drawable="@drawable/ic_profile_power_save"
+        app:profile_save="true"/>
+
+    <item
+        android:id="@+id/bias_save"
+        android:drawable="@drawable/ic_profile_bias_power_save"
+        app:profile_bias_save="true"/>
+
+    <item
+        android:id="@+id/balanced"
+        android:drawable="@drawable/ic_profile_balanced"
+        app:profile_balanced="true"/>
+
+    <item
+        android:id="@+id/high"
+        android:drawable="@drawable/ic_profile_high"
+        app:profile_high="true"/>
+
+    <item
+        android:id="@+id/nth"
+        android:drawable="@drawable/pathmorph_profile_save_to_bias_save" />
+
+    <transition
+        android:drawable="@drawable/pathmorph_profile_save_to_bias_save"
+        android:fromId="@id/save"
+        android:toId="@id/bias_save"/>
+
+    <transition
+        android:drawable="@drawable/pathmorph_profile_bias_save_to_balanced"
+        android:fromId="@id/bias_save"
+        android:toId="@id/balanced"/>
+
+    <transition
+        android:drawable="@drawable/pathmorph_profile_balanced_to_high"
+        android:fromId="@id/balanced"
+        android:toId="@id/high"/>
+
+    <transition
+        android:drawable="@drawable/pathmorph_profile_high_to_save"
+        android:fromId="@id/high"
+        android:toId="@id/save"/>
+
+    <transition
+        android:drawable="@drawable/pathmorph_profile_save_to_bias_save"
+        android:fromId="@id/nth"
+        android:toId="@id/bias_save"/>
+
+</animated-selector>

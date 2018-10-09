@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:drawable="@drawable/ic_profile_bias_power_save">
+    
+    <target
+        android:name="arrow">
+
+        <aapt:attr name="android:animation">
+
+            <objectAnimator
+                android:duration="@integer/animation_duration"
+                android:propertyName="pathData"
+                android:valueFrom="M 24,24 L 12,24"
+                android:valueTo="M 24,24 L 16,16"
+                android:valueType="pathType" />
+
+        </aapt:attr>
+
+    </target>
+
+</animated-vector>

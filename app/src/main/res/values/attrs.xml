@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <declare-styleable name="profile_state">
+        <attr name="profile_save" format="boolean" />
+        <attr name="profile_bias_save" format="boolean" />
+        <attr name="profile_balanced" format="boolean" />
+        <attr name="profile_high" format="boolean" />
+    </declare-styleable>
+</resources>

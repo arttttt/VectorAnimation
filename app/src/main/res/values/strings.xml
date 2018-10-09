@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">VectorAnim</string>
+
+    <string-array name="profiles">
+        <item>save</item>
+        <item>save_bias</item>
+        <item>balanced</item>
+        <item>high</item>
+    </string-array>
+
+</resources>
